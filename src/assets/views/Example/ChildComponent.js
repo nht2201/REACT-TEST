@@ -1,16 +1,22 @@
 import React from 'react';
+import Demo from './Demo.scss'
 
 class ChildComponent extends React.Component {
     //re-render
     state = {
         showJobs: false
     }
-
     handleShowHide = () => {
         this.setState({
             showJobs: !this.state.showJobs
         })
     }
+
+    handleOnclickDelete = (job) => {
+        console.log('>>> handleOnclickDelete: ', job)
+        this.props.deleteAJob(job)
+    }
+
     render() {
         let { arrJobs } = this.props;
         let { showJobs } = this.state;
@@ -20,7 +26,8 @@ class ChildComponent extends React.Component {
             <>
                 {showJobs === false ?
                     <div>
-                        <button onClick={() => this.handleShowHide()}>Show</button>
+                        <button className="btn-show" 
+                        onClick={() => this.handleShowHide()}>Show</button>
                     </div>
                     :
                     <>
@@ -29,13 +36,12 @@ class ChildComponent extends React.Component {
                                 arrJobs.map((item, index) => {
                                     return (
                                         <div key={item.id}>
-                                            {item.title} - {item.salary}
+                                            {item.title} - {item.salary} - {item.when} - {item.wife}
+                                            <></> <span onClick={() => this.handleOnclickDelete(item)}>🌈</span>
                                         </div>
                                     )
                                 })
-
                             }
-
                         </div>
                         <div>
                             <button onClick={() => this.handleShowHide()}>Hide</button>
@@ -44,7 +50,26 @@ class ChildComponent extends React.Component {
                 }
             </>
         )
-
     }
 }
+// const ChildComponent = (props) => {
+//     let { arrJobs } = props;
+//     return (
+//         <>
+//             <div className="job-lists">
+//                 {
+//                     arrJobs.map((item, index) => {
+//                         if (+item.salary >= 500) {
+//                             return (
+//                                 <div key={item.id}>
+//                                     {item.title} - {item.salary} $
+//                                 </div>
+//                             )
+//                         }
+//                     })
+//                 }
+//             </div>
+//         </>
+//     )
+// }
 export default ChildComponent;

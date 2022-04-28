@@ -1,0 +1,8 @@
+{
+    "post":[
+
+        {"id":1,"title":"learn React","author":"thang"},
+        {"id":2,"title":"learn Spring","author":"Doan"},
+        {"id":3,"title":"learn Express","author":"Huy"}
+    ]
+}
