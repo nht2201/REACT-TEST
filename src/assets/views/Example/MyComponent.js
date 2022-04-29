@@ -6,9 +6,10 @@ class MyComponent extends React.Component {
     //key:value
     state = {
         arrJobs: [
-            { id: 'abcJob1', title: 'Developers', when: 'Manager', wife:'30 tuổi', salary: '50000' },
-            { id: 'abcJob2', title: 'Testers', when: 'Staff', wife:'40 tuổi', salary: '40000' },
-            { id: 'abcJob3', title: 'Project managers', when: 'deputy', wife:'27 tuổi', salary: '1000' }
+            { id: 'abcJob1', title: 'Nguyễn Hữu Thắng', when: '350000$', wife:'Super Manager', salary: '30' },
+            { id: 'abcJob2', title: 'Nguyễn Mậu Đoàn', when: '270000$', wife:'Staff', salary: '37' },
+            { id: 'abcJob3', title: 'Hoàng Hữu Huy', when: '890000$', wife:'Vice President', salary: '50$' }
+            
         ]
     }
 

@@ -4,10 +4,10 @@ import MyComponent from './Example/MyComponent.js';
 import ListTodo from './Todos/ListTodo';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-
+import pngwing5 from './pngwing5.com.png';
 import Nav from './Nav/Nav';
 import Home from './Example/Home';
+import a1 from './a1.png';
 import {
   BrowserRouter,
   Switch,
@@ -27,7 +27,8 @@ function App() {
       <div className="App">
         <header className="App-header">
           <Nav />
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={a1} className="App-logo" alt="logo" />
+       
           <Switch>
             <Route path="/" exact>
               <Home />

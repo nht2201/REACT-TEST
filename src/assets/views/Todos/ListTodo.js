@@ -5,9 +5,10 @@ import { toast } from 'react-toastify';
 class ListTodo extends React.Component {
     state = {
         listTodos: [
-            { id: 'todo1', title: 'Doing homework' },
-            { id: 'todo2', title: 'Making videos' },
-            { id: 'todo3', title: 'Fixing bugs' },
+            { id: 'todo1', title: 'Nguyễn Hữu Thắng' },
+            { id: 'todo2', title: 'Nguyễn Mậu Đoàn' },
+            { id: 'todo3', title: 'Hoàng Hữu Huy' },
+            { id: 'todo4', title: 'Nguyễn Khánh Liên' },
         ],
         editTodo: {}
     }
@@ -63,7 +64,7 @@ class ListTodo extends React.Component {
         return (
             <>
             <p>
-                Simple TODO Apps with React.js (Eric &amp; Hoi Dan IT)
+                THE INTERSHIP OF VNPT TECHNOLOGY
             </p>
             <div className="list-todo-container">
                 <AddTodo

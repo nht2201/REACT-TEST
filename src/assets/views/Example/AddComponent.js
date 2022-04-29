@@ -57,21 +57,21 @@ class AddComponent extends React.Component {
                     onChange={(event) => this.handleChangeTitleJob(event)}
                 />
                 <br />
-                <label htmlFor="fname">Salary</label><br />
+                <label htmlFor="fname">Age</label><br />
                 <input
                     type="text"
                     value={this.state.when}
                     onChange={(event) => this.handleChangeTitleJob2(event)}
                 />
                 <br />
-                <label htmlFor="fname">Position</label><br />
+                <label htmlFor="fname">Salary</label><br />
                 <input
                     type="text"
                     value={this.state.wife}
                     onChange={(event) => this.handleChangeTitleJob3(event)}
                 />
                 <br />
-                <label htmlFor="lname">Health</label><br />
+                <label htmlFor="lname">Position</label><br />
                 <input
                     type="text"
                     value={this.state.salary}

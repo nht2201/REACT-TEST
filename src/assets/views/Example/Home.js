@@ -5,7 +5,7 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-               WELCOME TO VNPT
+               WELCOME TO VNPT TECHNOLOGY
             </div>
         )
     }
