@@ -8,6 +8,7 @@ import pngwing5 from './pngwing5.com.png';
 import Nav from './Nav/Nav';
 import Home from './Example/Home';
 import a1 from './a1.png';
+import duck from './duck.png';
 import {
   BrowserRouter,
   Switch,
