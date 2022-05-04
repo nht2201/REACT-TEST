@@ -9,6 +9,7 @@ import Nav from './Nav/Nav';
 import Home from './Example/Home';
 import a1 from './a1.png';
 import duck from './duck.png';
+import ListUser from './Users/ListUser'
 import {
   BrowserRouter,
   Switch,
@@ -39,6 +40,9 @@ function App() {
             </Route>
             <Route path="/about">
               <MyComponent />
+            </Route>
+            <Route path="/user">
+              <ListUser />
             </Route>
           </Switch>
 
