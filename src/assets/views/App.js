@@ -9,7 +9,8 @@ import Nav from './Nav/Nav';
 import Home from './Example/Home';
 import a1 from './a1.png';
 import duck from './duck.png';
-import ListUser from './Users/ListUser'
+import ListUser from './Users/ListUser';
+import DetailUser from './Users/DetailUser';
 import {
   BrowserRouter,
   Switch,
@@ -35,15 +36,23 @@ function App() {
             <Route path="/" exact>
               <Home />
             </Route>
+
             <Route path="/todo">
               <ListTodo />
             </Route>
+
             <Route path="/about">
               <MyComponent />
             </Route>
-            <Route path="/user">
+
+            <Route path="/user" exact>
               <ListUser />
             </Route>
+
+            <Route path="/user/:id">
+              <DetailUser />
+            </Route>
+
           </Switch>
 
         </header>

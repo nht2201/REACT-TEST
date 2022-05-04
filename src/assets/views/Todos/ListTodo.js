@@ -20,7 +20,7 @@ class ListTodo extends React.Component {
             listTodos: [...this.state.listTodos, todo],
             // listTodos: currentListTodo
         })
-        toast.success("Wow so easy!")
+        toast.success("Done!")
     }
     handleDeleteTodo = (todo) => {
         let currentTodos = this.state.listTodos;
